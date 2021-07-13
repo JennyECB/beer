@@ -1,0 +1,57 @@
+body {
+    padding: 20%;
+}
+
+.space {
+    padding: 40px;
+}
+
+.izq {
+    animation-name: izq;
+    animation-duration: 2s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.der {
+    animation-name: der;
+    animation-duration: 2s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes izq {
+    0% {
+        transform: rotate(30deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(-60deg)
+    }
+    75% {
+        transform: rotate(-30deg)
+        }
+    100% {
+        transform: rotate(30deg)
+    }
+}
+
+@keyframes der {
+    0% {
+        transform: rotate(-30deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(60deg)
+    }
+    75% {
+        transform: rotate(30deg)
+        }
+    100% {
+        transform: rotate(-30deg)
+    }
+}
